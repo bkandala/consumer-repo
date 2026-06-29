@@ -12,9 +12,9 @@ const LIBS_URL = (() => {
   // Local dev: run the libs repo on http://localhost:6456 via `aem up` in that repo
   if (host.includes('localhost')) return 'http://localhost:6456/libs';
   // Stage: preview URL of the libs repo
-  if (host.includes('.aem.page') || host.includes('.hlx.page')) return 'https://main--libs-repo--<your-org>.aem.page/libs';
+  if (host.includes('.aem.page') || host.includes('.hlx.page')) return 'https://main--libs-repo--bkandala.aem.page/libs';
   // Prod / live
-  return 'https://main--libs-repo--<your-org>.aem.live/libs';
+  return 'https://main--libs-repo--bkandala.aem.live/libs';
 })();
 
 // Dynamically import loadPage from the shared libs repo
