@@ -1,0 +1,17 @@
+.custom-hero {
+  display: grid;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+@media (width >= 768px) {
+  .custom-hero { grid-template-columns: 1fr 1fr; }
+}
+
+.custom-hero-content h1 { color: var(--color-brand-primary); }
+
+.custom-hero-visual img {
+  border-radius: var(--border-radius-l);
+  width: 100%;
+  height: auto;
+}

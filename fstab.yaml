@@ -1,0 +1,4 @@
+mountpoints:
+  /:
+    url: https://da.live/edit#/consumer-repo
+    type: markup

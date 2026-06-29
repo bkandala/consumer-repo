@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Consumer site using shared EDS libs">
+  <meta property="og:title" content="Consumer Site">
+  <link rel="canonical" href="/">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <script type="module" src="/scripts/scripts.js"></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <!-- 'custom-hero' loads from /blocks/ in THIS repo -->
+    <div>
+      <div class="custom-hero">
+        <div>
+          <div>
+            <h1>Welcome to the Consumer Site</h1>
+            <p>This page uses a custom block from this repo alongside shared blocks (cards, carousel, accordion) loaded automatically from the shared libs repo.</p>
+            <p><strong><a href="/products">Explore Products</a></strong></p>
+          </div>
+          <div>
+            <picture>
+              <img src="/images/hero.jpg" alt="Hero image" loading="eager">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 'cards' loads from the shared libs repo -->
+    <div>
+      <h2>Featured Content</h2>
+      <div class="cards">
+        <div>
+          <div><picture><img src="/images/card-1.jpg" alt="Card 1"></picture></div>
+          <div><h3>Feature One</h3><p>Description of feature one.</p><p><a href="#">Learn more</a></p></div>
+        </div>
+        <div>
+          <div><picture><img src="/images/card-2.jpg" alt="Card 2"></picture></div>
+          <div><h3>Feature Two</h3><p>Description of feature two.</p><p><a href="#">Learn more</a></p></div>
+        </div>
+        <div>
+          <div><picture><img src="/images/card-3.jpg" alt="Card 3"></picture></div>
+          <div><h3>Feature Three</h3><p>Description of feature three.</p><p><a href="#">Learn more</a></p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 'accordion' loads from the shared libs repo -->
+    <div>
+      <h2>FAQ</h2>
+      <div class="accordion">
+        <div><div>What is EDS?</div><div><p>Adobe Edge Delivery Services is a composable set of services that enables outstanding experiences with maximum impact.</p></div></div>
+        <div><div>How do I use shared blocks?</div><div><p>Set <code>libsUrl</code> to the shared libs repo URL in your <code>scripts/scripts.js</code>. All blocks from the libs repo load automatically.</p></div></div>
+        <div><div>Can I override a shared block?</div><div><p>Yes — create <code>blocks/&lt;name&gt;/</code> in your own repo. Your local version takes precedence via the <code>externalLibs</code> config option.</p></div></div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>

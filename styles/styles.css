@@ -1,0 +1,26 @@
+/*
+ * Consumer repo styles.
+ * Import shared design tokens & base from the libs repo, then override/extend.
+ *
+ * At runtime the browser fetches this from the libs repo's AEM Live URL.
+ * For local dev, use a relative import (libs repo running on port 6456).
+ */
+
+/* In a real deployment this import URL would be the live libs URL.
+   During local dev the shared styles are injected by scripts.js automatically. */
+
+/* ---- Design token overrides ---- */
+:root {
+  /* Override brand colour to match this site's brand */
+  --color-brand-primary: #fa0f00;
+  --color-brand-primary-hover: #c80000;
+  --nav-height: 72px;
+}
+
+/* ---- Site-specific additions ---- */
+.hero-banner {
+  background: linear-gradient(135deg, var(--color-brand-primary), var(--color-brand-secondary));
+  color: #fff;
+  padding: 80px var(--grid-padding);
+  text-align: center;
+}
